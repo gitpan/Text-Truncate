@@ -1,0 +1,6 @@
+Revision history for Perl extension Text::Truncate.
+
+0.01  Fri Nov 22
+	- original version; created by h2xs 1.21 with options
+		-X -A -v 0.01 -n Text::Truncate -b 5.5.0
+
