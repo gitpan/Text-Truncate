@@ -13,7 +13,7 @@ use vars qw( $VERSION @ISA @EXPORT @EXPORT_OK $DEFAULT_MARKER );
 @EXPORT = qw(
  truncstr
 );
-$VERSION = '1.01';
+$VERSION = '1.02';
 
 $DEFAULT_MARKER = "...";
 
@@ -41,28 +41,6 @@ __END__
 =head1 NAME
 
 Text::Truncate - Perl module with simple string truncating routine
-
-=head1 REQUIREMENTS
-
-This module only uses standard modules.  It should run on Perl 5.004.
-
-=head2 Installation
-
-Installation is pretty standard:
-
-  perl Makefile.PL
-  make
-  make test
-  make install
-
-(On Windows platforms you should use nmake instead.)
-
-Using Build.PL (if you have L<Module::Build> installed):
-
-  perl Build.PL
-  perl Build
-  perl Build test
-  perl Build install    
 
 =head1 SYNOPSIS
 

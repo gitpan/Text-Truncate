@@ -7,5 +7,5 @@ eval "use Pod::Coverage";
 
 plan skip_all => "Pod::Coverage required" if $@;
 
-ok( Pod::Coverage->new( package => 'Text::Truncate' ) );
+ok( Pod::Coverage->new( package => 'Text::Truncate' )->coverage == 1 );
 

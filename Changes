@@ -1,5 +1,9 @@
 Revision history for Perl extension Text::Truncate.
 
+1.02  Mon Apr  4 2005
+	- fixed bug in Pod::Coverage tests
+	- minor updates to POD and README
+
 1.01  Tue Mar 29 2005
 	- added Test::Prereq to tests
 	- added Test::Pod tests

@@ -48,19 +48,6 @@ DESCRIPTION
 
     The synopsis gives examples of how to use it.
 
-  EXPORT
-    The following functions are exported:
-
-    truncstr
-          $rstring = truncstr( $istring, $cutoff_length );
-
-          $rstring = truncstr( $istring, $cutoff_length, $continued_symbol );
-
-        If the *$istring* is longer than the *$cutoff_length*, then the
-        string will be truncated to *$cutoff_length* characters, including
-        the *$continued_symbol* (which defaults to ``...'' if none is
-        specified).
-
 DSLIP
       R - Released
       d - Developer
