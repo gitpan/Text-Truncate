@@ -43,11 +43,36 @@ DESCRIPTION
     This is a simple, no-brainer subroutine to truncate a string and add an
     optional cutoff marker (defaults to ``...'').
 
-    More details are in the module documentation.
+    (Yes, this is a really brain-dead sort of thing to make a module out of,
+    but then again, I use it so often that it might as well be in a module.)
 
-LICENSE
-    This module is in the public domain. No copyright is claimed.
+    The synopsis gives examples of how to use it.
+
+  EXPORT
+    The following functions are exported:
+
+    truncstr
+          $rstring = truncstr( $istring, $cutoff_length );
+
+          $rstring = truncstr( $istring, $cutoff_length, $continued_symbol );
+
+        If the *$istring* is longer than the *$cutoff_length*, then the
+        string will be truncated to *$cutoff_length* characters, including
+        the *$continued_symbol* (which defaults to ``...'' if none is
+        specified).
+
+DSLIP
+      R - Released
+      d - Developer
+      p - Perl-only
+      f - Hybrid interface
+      o - Standard Perl
+
+    See <http://cpan.uwinnipeg.ca/htdocs/faqs/dslip.html>
 
 AUTHOR
     Robert Rothenberg <rrwo at cpan.org>
+
+LICENSE
+    This module is in the public domain. No copyright is claimed.
 

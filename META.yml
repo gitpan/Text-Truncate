@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name: Text-Truncate
-version: 1.00
+version: 1.01
 author:
   - Robert Rothenberg <rrwo at cpan.org>
 abstract: Perl module with simple string truncating routine
@@ -8,10 +8,14 @@ license: unrestricted
 requires:
   Carp: 0
   perl: 5.004
+recommends:
+  Pod::Coverage: 0
+  Test::Pod: 1
+  Test::Prereq: 0
 build_requires:
-  Test: 0
+  Test::More: 0
 provides:
   Text::Truncate:
     file: lib/Text/Truncate.pm
-    version: 1.00
-generated_by: Module::Build version 0.25_02
+    version: 1.01
+generated_by: Module::Build version 0.2607

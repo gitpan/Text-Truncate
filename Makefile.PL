@@ -6,7 +6,7 @@ WriteMakefile
           'VERSION_FROM' => 'lib/Text/Truncate.pm',
           'PREREQ_PM' => {
                            'Carp' => '0',
-                           'Test' => '0'
+                           'Test::More' => '0'
                          },
           'INSTALLDIRS' => 'site',
           'PL_FILES' => {}

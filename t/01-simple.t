@@ -1,10 +1,10 @@
+#!/usr/bin/perl
 
 use strict;
 
-use Test;
-BEGIN { plan tests => 1279 };
-use Text::Truncate;
-ok(1); # If we made it this far, we're ok.
+use Test::More tests => 1279;
+
+use_ok('Text::Truncate', 1.01);
 
 my $mark_len = length($Text::Truncate::DEFAULT_MARKER);
 

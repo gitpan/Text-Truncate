@@ -13,7 +13,7 @@ use vars qw( $VERSION @ISA @EXPORT @EXPORT_OK $DEFAULT_MARKER );
 @EXPORT = qw(
  truncstr
 );
-$VERSION = '1.00';
+$VERSION = '1.01';
 
 $DEFAULT_MARKER = "...";
 
@@ -113,12 +113,22 @@ specified).
 
 =back
 
-=head1 LICENSE
+=head1 DSLIP
 
-This module is in the public domain. No copyright is claimed.
+  R - Released
+  d - Developer
+  p - Perl-only
+  f - Hybrid interface
+  o - Standard Perl
+
+See L<http://cpan.uwinnipeg.ca/htdocs/faqs/dslip.html>
 
 =head1 AUTHOR
 
 Robert Rothenberg <rrwo at cpan.org>
+
+=head1 LICENSE
+
+This module is in the public domain. No copyright is claimed.
 
 =cut
