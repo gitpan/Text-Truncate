@@ -1,5 +1,8 @@
+
+use strict;
+
 use Test;
-BEGIN { plan tests => 1234 };
+BEGIN { plan tests => 1279 };
 use Text::Truncate;
 ok(1); # If we made it this far, we're ok.
 
@@ -35,7 +38,7 @@ for (my $str_len = 0; $str_len<($mark_len+10); $str_len++) {
     # print $str, " ", $res, "\n";
     ok(length($res) == _min($trunc_len, $str_len));
     if (length($res) < length($str)) {
-      ok($res =~ m/$alertnate$/);
+      ok($res =~ m/^A*$alternate$/);
     } else {
       ok($res eq $str);
     }
@@ -54,7 +57,7 @@ for (my $str_len = 0; $str_len<($mark_len+10); $str_len++) {
     # print $str, " ", $res, "\n";
     ok(length($res) == _min($trunc_len, $str_len));
     if (length($res) < length($str)) {
-      ok($res =~ m/$alertnate$/);
+      ok($res =~ m/^A*$alternate$/);
     } else {
       ok($res eq $str);
     }
@@ -73,6 +76,7 @@ for (my $str_len = 0; $str_len<($mark_len+10); $str_len++) {
     # print $str, " ", $res, "\n";
     ok(length($res) == _min($trunc_len, $str_len));
     if (length($res) < length($str)) {
+      ok($res =~ m/^A*$/);
     } else {
       ok($res eq $str);
     }

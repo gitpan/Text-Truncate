@@ -1,6 +1,8 @@
+Build.PL
 Changes
 Makefile.PL
 MANIFEST
+META.yml
 README
 t/01-simple.t
-Truncate.pm
+lib/Text/Truncate.pm

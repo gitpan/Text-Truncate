@@ -1,6 +1,6 @@
 package Text::Truncate;
 
-use 5.00500;
+use 5.00400;
 use strict;
 
 use Carp;
@@ -13,7 +13,7 @@ use vars qw( $VERSION @ISA @EXPORT @EXPORT_OK $DEFAULT_MARKER );
 @EXPORT = qw(
  truncstr
 );
-$VERSION = '0.01';
+$VERSION = '1.00';
 
 $DEFAULT_MARKER = "...";
 
@@ -23,13 +23,13 @@ sub truncstr
     my $cutoff = shift;
     my $marker = shift;
 
-    $marker = $DEFAULT_MARKER, if (!defined($marker));
+    $marker = ($DEFAULT_MARKER || ""), unless (defined($marker));
 
     croak "continued symbol is longer than the cutoff length",
       if (length($marker) > $cutoff);
 
     if (length($string) > $cutoff) {
-      $string = substr($string, 0, $cutoff-length($marker)) . $marker;
+      $string = (substr($string, 0, $cutoff-length($marker))||"") . $marker;
     }
 
     return $string;
@@ -44,7 +44,7 @@ Text::Truncate - Perl module with simple string truncating routine
 
 =head1 REQUIREMENTS
 
-This module only uses standard modules.  It should run on Perl 5.005.
+This module only uses standard modules.  It should run on Perl 5.004.
 
 =head2 Installation
 
@@ -54,6 +54,15 @@ Installation is pretty standard:
   make
   make test
   make install
+
+(On Windows platforms you should use nmake instead.)
+
+Using Build.PL (if you have L<Module::Build> installed):
+
+  perl Build.PL
+  perl Build
+  perl Build test
+  perl Build install    
 
 =head1 SYNOPSIS
 
@@ -83,7 +92,7 @@ an optional cutoff marker (defaults to ``...'').
 of, but then again, I use it so often that it might as well be in a
 module.)
 
-The synopsis gives examples of how to use.
+The synopsis gives examples of how to use it.
 
 =head2 EXPORT
 
@@ -110,6 +119,6 @@ This module is in the public domain. No copyright is claimed.
 
 =head1 AUTHOR
 
-Robert Rothenberg <rrwo@cpan.org>
+Robert Rothenberg <rrwo at cpan.org>
 
 =cut

@@ -1,6 +1,13 @@
 Revision history for Perl extension Text::Truncate.
 
-0.01  Fri Nov 22
+1.00  Tue Aug 03 2004
+	- changes to handle undefined values
+	- fixed tests
+	- added Build.PL and META.yml to distribution
+	- changed minimum version to 5.004
+	- minor changes to POD
+
+0.01  Fri Nov 22 2002
 	- original version; created by h2xs 1.21 with options
 		-X -A -v 0.01 -n Text::Truncate -b 5.5.0
 
