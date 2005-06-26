@@ -13,7 +13,7 @@ use vars qw( $VERSION @ISA @EXPORT @EXPORT_OK $DEFAULT_MARKER );
 @EXPORT = qw(
  truncstr
 );
-$VERSION = '1.02';
+$VERSION = '1.03';
 
 $DEFAULT_MARKER = "...";
 
@@ -41,6 +41,30 @@ __END__
 =head1 NAME
 
 Text::Truncate - Perl module with simple string truncating routine
+
+=begin readme
+
+=head1 REQUIREMENTS
+
+This module only uses standard modules. It should run on Perl 5.004.
+
+=head1 INSTALLATION
+
+Installation is pretty standard:
+
+  perl Makefile.PL
+  make test
+  make install
+
+(On Windows platforms you should use nmake instead.)
+
+Using Build.PL (if you have L<Module::Build> installed):
+
+  perl Build.PL
+  perl Build test
+  perl Build install    
+
+=end readme
 
 =head1 SYNOPSIS
 
@@ -72,6 +96,8 @@ module.)
 
 The synopsis gives examples of how to use it.
 
+=for readme stop
+
 =head2 EXPORT
 
 The following functions are exported:
@@ -84,22 +110,29 @@ The following functions are exported:
 
   $rstring = truncstr( $istring, $cutoff_length, $continued_symbol );
 
-If the I<$istring> is longer than the I<$cutoff_length>, then the
-string will be truncated to I<$cutoff_length> characters, including
-the I<$continued_symbol> (which defaults to ``...'' if none is
+If the C<$istring> is longer than the C<$cutoff_length>, then the
+string will be truncated to C<$cutoff_length> characters, including
+the C<$continued_symbol> (which defaults to ``...'' if none is
 specified).
+
+The default C<$continued_symbol> can be changed in
+C<$Text::Truncate::DEFAULT_MARKER>.
 
 =back
 
-=head1 DSLIP
+=for readme continue
 
-  R - Released
-  d - Developer
-  p - Perl-only
-  f - Hybrid interface
-  o - Standard Perl
+=begin readme
 
-See L<http://cpan.uwinnipeg.ca/htdocs/faqs/dslip.html>
+=head1 REVISION HISTORY
+
+The following changes have been made since the previous release:
+
+=for readme include file="Changes" type="text" start="^1.03" stop="^1.02"
+
+See the F<Changes> file for a detailed revision history.
+
+=end readme
 
 =head1 AUTHOR
 

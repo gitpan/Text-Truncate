@@ -9,7 +9,7 @@ my $build = Module::Build->new
        'Carp'        => 0,
      },
      recommends => {
-       'Pod::Coverage'  => 0,
+       'Test::Pod::Coverage' => 0,
        'Test::Pod'      => 1.00,
        'Test::Prereq'   => 0,
      },

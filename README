@@ -4,11 +4,10 @@ NAME
 REQUIREMENTS
     This module only uses standard modules. It should run on Perl 5.004.
 
-  Installation
+INSTALLATION
     Installation is pretty standard:
 
       perl Makefile.PL
-      make
       make test
       make install
 
@@ -17,7 +16,6 @@ REQUIREMENTS
     Using Build.PL (if you have Module::Build installed):
 
       perl Build.PL
-      perl Build
       perl Build test
       perl Build install    
 
@@ -48,14 +46,16 @@ DESCRIPTION
 
     The synopsis gives examples of how to use it.
 
-DSLIP
-      R - Released
-      d - Developer
-      p - Perl-only
-      f - Hybrid interface
-      o - Standard Perl
+REVISION HISTORY
+    The following changes have been made since the previous release:
 
-    See <http://cpan.uwinnipeg.ca/htdocs/faqs/dslip.html>
+    1.03  Sun Jun 26 2005
+            - README generated from Pod::Readme
+            - minor updates to POD
+            - uses Test::Pod::Coverage instead
+                  (thanks to Richard Clamp for pointing this out)
+
+    See the Changes file for a detailed revision history.
 
 AUTHOR
     Robert Rothenberg <rrwo at cpan.org>

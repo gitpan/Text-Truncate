@@ -4,9 +4,9 @@ Makefile.PL
 MANIFEST
 META.yml
 README
-t/00-Prereqs.t
-t/00-pod-coverage.t
-t/00-pod.t
 t/01-simple.t
+t/90-pod-coverage.t
+t/90-pod.t
+t/90-prereqs.t
 lib/Text/Truncate.pm
 SIGNATURE    Added here by Module::Build
