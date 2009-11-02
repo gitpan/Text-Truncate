@@ -13,7 +13,7 @@ use vars qw( $VERSION @ISA @EXPORT @EXPORT_OK $DEFAULT_MARKER );
 @EXPORT = qw(
  truncstr
 );
-$VERSION = '1.03';
+$VERSION = '1.04';
 
 $DEFAULT_MARKER = "...";
 
@@ -128,7 +128,7 @@ C<$Text::Truncate::DEFAULT_MARKER>.
 
 The following changes have been made since the previous release:
 
-=for readme include file="Changes" type="text" start="^1.03" stop="^1.02"
+=for readme include file="Changes" type="text" start="^1.04" stop="^1.02"
 
 See the F<Changes> file for a detailed revision history.
 
