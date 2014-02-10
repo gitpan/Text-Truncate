@@ -57,9 +57,14 @@ REVISION HISTORY
 
     See the Changes file for a detailed revision history.
 
+REPOSITORY
+ 
+ https://github.com/ileiva/Text-Truncate
+
 AUTHOR
     Robert Rothenberg <rrwo at cpan.org>
+    This is now being mantained by israel leiva <ilv@cpan.org>
 
 LICENSE
-    This module is in the public domain. No copyright is claimed.
+    Unrestricted. This module is in the public domain. No copyright is claimed.
 

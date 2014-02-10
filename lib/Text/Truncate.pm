@@ -1,6 +1,7 @@
 package Text::Truncate;
 
 use 5.00400;
+use warnings;
 use strict;
 
 use Carp;
@@ -13,7 +14,7 @@ use vars qw( $VERSION @ISA @EXPORT @EXPORT_OK $DEFAULT_MARKER );
 @EXPORT = qw(
  truncstr
 );
-$VERSION = '1.04';
+$VERSION = '1.05';
 
 $DEFAULT_MARKER = "...";
 
@@ -134,12 +135,17 @@ See the F<Changes> file for a detailed revision history.
 
 =end readme
 
+=head1 REPOSITORY
+ 
+ https://github.com/ileiva/Text-Truncate
+
 =head1 AUTHOR
 
 Robert Rothenberg <rrwo at cpan.org>
+This is now being mantained by israel leiva <ilv@cpan.org>
 
 =head1 LICENSE
 
-This module is in the public domain. No copyright is claimed.
+Unrestricted. This module is in the public domain. No copyright is claimed.
 
 =cut
