@@ -1,6 +1,6 @@
 ---
 name: Text-Truncate
-version: 1.05
+version: 1.06
 author:
   - 'Robert Rothenberg <rrwo at cpan.org>'
 abstract: Perl module with simple string truncating routine
@@ -19,7 +19,7 @@ configure_requires:
 provides:
   Text::Truncate:
     file: lib/Text/Truncate.pm
-    version: 1.05
+    version: 1.06
 generated_by: Module::Build version 0.35
 resources:
   repository: git://github.com/ileiva/Text-Truncate.git

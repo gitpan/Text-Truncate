@@ -14,7 +14,7 @@ use vars qw( $VERSION @ISA @EXPORT @EXPORT_OK $DEFAULT_MARKER );
 @EXPORT = qw(
  truncstr
 );
-$VERSION = '1.05';
+$VERSION = '1.06';
 
 $DEFAULT_MARKER = "...";
 
@@ -41,7 +41,7 @@ __END__
 
 =head1 NAME
 
-Text::Truncate - Perl module with simple string truncating routine
+Text::Truncate - Perl module with simple string truncating routine.
 
 =begin readme
 
@@ -123,17 +123,9 @@ C<$Text::Truncate::DEFAULT_MARKER>.
 
 =for readme continue
 
-=begin readme
-
-=head1 REVISION HISTORY
-
-The following changes have been made since the previous release:
-
-=for readme include file="Changes" type="text" start="^1.04" stop="^1.02"
-
-See the F<Changes> file for a detailed revision history.
-
-=end readme
+=head1 SEE ALSO
+ 
+ L<String::Truncate>, L<Text::Elide>
 
 =head1 REPOSITORY
  
@@ -142,7 +134,7 @@ See the F<Changes> file for a detailed revision history.
 =head1 AUTHOR
 
 Robert Rothenberg <rrwo at cpan.org>
-This is now being mantained by israel leiva <ilv@cpan.org>
+This is now being mantained by Israel Leiva <ilv@cpan.org>
 
 =head1 LICENSE
 

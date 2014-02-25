@@ -1,15 +1,18 @@
 Revision history for Perl extension Text::Truncate.
 
+1.06  2014-02-24
+  - Added SEE ALSO in pod 
+
 1.05  2014-02-09
-    - ILV has taken over maintenance
-    - Added github repo to metadata and pod
-    - Reformatted Changes according to CPAN::Changes::Spec
-    - Added LICENSE file
-    - Specified 'unrestricted' license in pod
-    - Added 'use warnings'
+  - ILV has taken over maintenance
+  - Added github repo to metadata and pod
+  - Reformatted Changes according to CPAN::Changes::Spec
+  - Added LICENSE file
+  - Specified 'unrestricted' license in pod
+  - Added 'use warnings'
 
 1.04  2009-11-02
- 	- re-added to CPAN after accidental removal
+  - re-added to CPAN after accidental removal
 
 1.03  2005-06-26
 	- README generated from Pod::Readme
